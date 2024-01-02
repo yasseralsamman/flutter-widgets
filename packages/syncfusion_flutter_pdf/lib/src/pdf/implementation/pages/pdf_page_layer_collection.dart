@@ -588,7 +588,11 @@ class PdfPageLayerCollectionHelper extends PdfObjectCollectionHelper {
           }
         }
         String? id;
-        if (recordCollection.recordCollection[j].operands!.isNotEmpty &&
+        if(recordCollection.recordCollection[j].operands == null) {
+          recordCollection.recordCollection[j].operands = [];
+        }
+        if (recordCollection.recordCollection[j].operands != null &&
+            recordCollection.recordCollection[j].operands!.isNotEmpty &&
             recordCollection.recordCollection[j].operands![0].startsWith('/')) {
           id = recordCollection.recordCollection[j].operands![0].substring(1);
         }
