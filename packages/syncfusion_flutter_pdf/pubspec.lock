@@ -163,9 +163,11 @@ packages:
   syncfusion_flutter_core:
     dependency: "direct main"
     description:
-      path: "../syncfusion_flutter_core"
-      relative: true
-    source: path
+      path: "packages/syncfusion_flutter_core"
+      ref: master
+      resolved-ref: "9e9b8b50ffd704ffc53faaa9496068c274fc1638"
+      url: "https://github.com/yasseralsamman/flutter-widgets"
+    source: git
     version: "23.2.5"
   term_glyph:
     dependency: transitive
